@@ -1,0 +1,28 @@
+Урок 18 від 31.01.2019
+
+Git Hub - робота по створенню папки, прив'язки папки та створенню файла VisualStudio
+ та його прив'язки до репозиторію.
+
+1. Create a new repository
+2. git init  (Ініціалізація репозиторію в git-bash)
+3. git remote add origin https://github.com/macnaer/C-Test.git (Копіюємо адресу віддаленого репозиторію в git-bash)
+4. Додаэмо файли (редагуэмо)
+5. git status (Перегляд змін в git bash)
+
+У разі потреби
+git config --global user.name "John Doe"  (Своє ім'я)
+git config --global user.email johndoe@example.com   (Свій email)
+
+
+6. git add . (Створення списку змін які необхідно завантажити на репозиторій git-bash)
+7. git commit -m "Опис змін"  (Опис зроблених змін  git-bash)
+8 git push origin master  (Завантаження змін в репозиторій git-bash)
+
+
+Щоб правильно працювало завантаження в репозиторій, потрібно використовувати розширення gitignore для файлів, які не потрібно
+завантажувати в репозиторій.
+
+.gitignore
+/31.01.19/.vs/
+/31.01.19/Debug/
+https://github.com/macnaer/C-Plus-Plus-Test
