@@ -1,0 +1,7 @@
+﻿  Source.cpp
+c:\elenaprojects\homeworks\05.02.2019dubl\05.02.2019dubl\source.cpp(11): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+c:\elenaprojects\homeworks\05.02.2019dubl\05.02.2019dubl\source.cpp(12): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+c:\elenaprojects\homeworks\05.02.2019dubl\05.02.2019dubl\source.cpp(20): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+c:\elenaprojects\homeworks\05.02.2019dubl\05.02.2019dubl\source.cpp(34): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+c:\elenaprojects\homeworks\05.02.2019dubl\05.02.2019dubl\source.cpp(77): error C2369: arr: переопределение; различные индексы
+  c:\elenaprojects\homeworks\05.02.2019dubl\05.02.2019dubl\source.cpp(76): note:  см. объявление "arr"
