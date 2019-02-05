@@ -1,0 +1,5 @@
+﻿  Source.cpp
+c:\elenaprojects\homeworks\29.01.2019\29.01.2019\source.cpp(7): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+c:\elenaprojects\homeworks\29.01.2019\29.01.2019\source.cpp(8): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+c:\elenaprojects\homeworks\29.01.2019\29.01.2019\source.cpp(32): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  29.01.2019.vcxproj -> C:\ElenaProjects\Homeworks\29.01.2019\Debug\29.01.2019.exe

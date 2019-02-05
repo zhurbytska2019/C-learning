@@ -13,6 +13,7 @@
 //
 //// Функція для заповнення масиву рандомом та виведення на екран.
 //void FillPrintArray (int arr[], const int SIZE) {
+//	srand(time(NULL));
 //	cout << "			";
 //	for (int i = 0; i < SIZE; i++) {
 //		arr[i] = rand() % 10 + 1;
@@ -111,20 +112,21 @@
  Вивести назви та ціни товарів за заростанням та спаданням цін. 
 Використати алгоритм впорядкування методом бульбашки.*/
 
-# include <iostream>;
-#include <ctime>;
-using namespace std;
-
-int main()
-{
-	char arrGoods[5] = { Milk, Bread, Apples, Meat, Tomatoes};
-	int arrPrices[5] = { 25, 15, 28, 135, 75 };
-	int const MIL = 0, BREAD = 1, APPL = 2, MEAT = 3, TOM = 4;
-
-	cout << arrGoods[MIL] << " " << arrPrices[MIL];
-
-
-
-	system("pause");
-	return 0;
-}
+//# include <iostream>;
+//#include <ctime>;
+//using namespace std;
+//
+//int main()
+//{
+//	//char arrGoods[5][10] = { "Milk", "Bread", "Apples", "Meat", "Tomatoes"};
+//	int arrGoods[5] = { 0,1,2,3,4 };
+//	int arrPrices[5] = { 25, 15, 28, 135, 75 };
+//	int const MIL = 0, BREAD = 1, APPL = 2, MEAT = 3, TOM = 4;
+//
+//	cout << arrGoods[MIL] << " " << arrPrices[MIL]<<endl;
+//
+//
+//
+//	system("pause");
+//	return 0;
+//}
