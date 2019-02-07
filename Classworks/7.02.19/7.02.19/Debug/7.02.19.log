@@ -1,0 +1,22 @@
+﻿  Source.cpp
+c:\users\zhurbytska\desktop\projectselena\classworks\7.02.19\7.02.19\source.cpp(52): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\zhurbytska\desktop\projectselena\classworks\7.02.19\7.02.19\source.cpp(53): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\zhurbytska\desktop\projectselena\classworks\7.02.19\7.02.19\source.cpp(63): error C2065: 'arr': undeclared identifier
+c:\users\zhurbytska\desktop\projectselena\classworks\7.02.19\7.02.19\source.cpp(63): error C2059: syntax error: ']'
+c:\users\zhurbytska\desktop\projectselena\classworks\7.02.19\7.02.19\source.cpp(66): error C2065: 'arr': undeclared identifier
+c:\users\zhurbytska\desktop\projectselena\classworks\7.02.19\7.02.19\source.cpp(66): error C2988: unrecognizable template declaration/definition
+c:\users\zhurbytska\desktop\projectselena\classworks\7.02.19\7.02.19\source.cpp(66): error C2059: syntax error: ']'
+c:\users\zhurbytska\desktop\projectselena\classworks\7.02.19\7.02.19\source.cpp(69): error C2065: 'arr': undeclared identifier
+c:\users\zhurbytska\desktop\projectselena\classworks\7.02.19\7.02.19\source.cpp(69): error C2988: unrecognizable template declaration/definition
+c:\users\zhurbytska\desktop\projectselena\classworks\7.02.19\7.02.19\source.cpp(69): error C2059: syntax error: ']'
+c:\users\zhurbytska\desktop\projectselena\classworks\7.02.19\7.02.19\source.cpp(69): error C2143: syntax error: missing ';' before '{'
+c:\users\zhurbytska\desktop\projectselena\classworks\7.02.19\7.02.19\source.cpp(69): error C2447: '{': missing function header (old-style formal list?)
+c:\users\zhurbytska\desktop\projectselena\classworks\7.02.19\7.02.19\source.cpp(76): error C2988: unrecognizable template declaration/definition
+c:\users\zhurbytska\desktop\projectselena\classworks\7.02.19\7.02.19\source.cpp(76): error C2143: syntax error: missing ';' before '<<'
+c:\users\zhurbytska\desktop\projectselena\classworks\7.02.19\7.02.19\source.cpp(79): error C2065: 'arr': undeclared identifier
+c:\users\zhurbytska\desktop\projectselena\classworks\7.02.19\7.02.19\source.cpp(79): error C2182: 'PrintArray': illegal use of type 'void'
+c:\users\zhurbytska\desktop\projectselena\classworks\7.02.19\7.02.19\source.cpp(79): error C3861: 'arr': identifier not found
+c:\users\zhurbytska\desktop\projectselena\classworks\7.02.19\7.02.19\source.cpp(79): error C2447: '{': missing function header (old-style formal list?)
+c:\users\zhurbytska\desktop\projectselena\classworks\7.02.19\7.02.19\source.cpp(93): error C3861: 'FillArray': identifier not found
+c:\users\zhurbytska\desktop\projectselena\classworks\7.02.19\7.02.19\source.cpp(95): error C3245: 'PrintArray': use of a variable template requires template argument list
+  c:\users\zhurbytska\desktop\projectselena\classworks\7.02.19\7.02.19\source.cpp(79): note: see declaration of 'PrintArray'
