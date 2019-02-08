@@ -12,7 +12,6 @@
 #include <ctime>;
 using namespace std;
 
-
 int sum = 0;//suma elementiv masyvu
 int res = 0;//rezultat obchyslennia
 
@@ -23,6 +22,15 @@ void FillArray(int arr[], const int SIZE1) {
 	}
 	
 }
+
+void FillArray(double arr[], const int SIZE1) {// perevantazhena funkcia
+	srand(time(NULL));
+	for (int i = 0; i < SIZE1; i++) {
+		arr[i] = rand() % 71 + (-26);
+	}
+}
+
+
 void PrintArray(int arr[], const int SIZE1) {
 	for (int i = 0; i < SIZE1; i++) {
 		cout << arr[i]<<"	";
@@ -30,13 +38,21 @@ void PrintArray(int arr[], const int SIZE1) {
 	}cout << endl;
 }
 
+void PrintArray(double arr[], const int SIZE1) {//perevantazhena funkcia Print.
+	for (int i = 0; i < SIZE1; i++) {
+		cout << arr[i] << "	";
+
+	}cout << endl;
+}
+
+
 void FillArray2(int arr[], const int SIZE2) {
 	srand(time(NULL));
 	for (int i = 0; i < SIZE2; i++) {
 		arr[i] = rand() % 71 + (-26);
 	}
-
 }
+
 void PrintArray2(int arr[], const int SIZE2) {
 	for (int i = 0; i < SIZE2; i++) {
 		cout << arr[i] << "	";
@@ -46,13 +62,27 @@ void PrintArray2(int arr[], const int SIZE2) {
 	
 //perevantageni phunkcii
 // - dla znahodgennia sumy elementiv masyvu
+
 int Sum(int arr[], const int SIZE1) {
+	int sum = 0;//suma elementiv masyvu
+
 	for (int i = 0; i < SIZE1; i++) {
+		
 		sum += arr[i];
 		
 	}cout <<"Suma elementiv masyvu : "<< sum << endl;
 	return sum;
 }
+
+double Sum(double arr[], const int SIZE1) {// perevantazhena funkcia Sum;
+int sum = 0;//suma elementiv masyvu
+	for (int i = 0; i < SIZE1; i++) {
+		sum += arr[i];
+
+	}cout << "Suma elementiv masyvu : " << sum << endl;
+	return sum;
+}
+
 // - dla znahodgennia minimalnogo elementa masyvu do vkazanoi megi promigku
 
 void Min(int arr[], const int SIZE1, int Mezha) {
@@ -71,8 +101,10 @@ for (int i = 0; i < SIZE1; i++) {
 
 /////////////////////////////////////////// MAIN /////////////////////////////////////////////////
 int main() {
+int sum = 0;//suma elementiv masyvu
 	const int SIZE1 = 10;
 	const int SIZE2 = 7;
+	
 	int arr[SIZE1] = {};
 	int arr2[SIZE2] = {};	
 
@@ -92,9 +124,20 @@ int main() {
 	Sum(arr, SIZE1);
 	Sum(arr2, SIZE2);
 	cout <<"==== znahodgennia minimalnogo elementa masyvu do vkazanoi mezhi promigku ========" << endl;
-	//vyklyk phunkcii:
-
 	
+
+
+
+	cout << "=============== exemple =================" << endl;
+
+	double arr3[SIZE1] = {};
+	FillArray(arr3, SIZE1);
+	PrintArray(arr3, SIZE1);
+
+	cout << "=============== exemple =================" << endl;
+		
+
+
 	cout << "Oberit masyv: 1 chy 2" << endl;
 	int MasyvNomer = 0;
 	cin >> MasyvNomer;
@@ -111,8 +154,8 @@ int main() {
 		Min(arr, SIZE2, Mezha);
 	}
 	
-
 	system("pause");
 	return 0;
 
 }
+

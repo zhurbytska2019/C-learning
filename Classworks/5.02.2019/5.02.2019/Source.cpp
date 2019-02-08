@@ -75,7 +75,7 @@ int Sum(double a, double b, double c) {		//int sum 3 numbers
 int Min(int a, int b) {		//int differen 2 numbers
 	return a - b;
 }
-double Min(double a, double b) {		//int differen 2 numbers with ,
+double Min(double a, double b) {//int differen 2 numbers with ,
 	return a - b;
 }
 int Min(int a, int b, int c) {
@@ -140,17 +140,14 @@ double Div(double a, double b, double c) {
 }
 
 
-
-
-
+///////////////////////////////////////////////// MAIN ///////////////////////////////////////////////////////
 
 int main() {
 	int user = 0; // user choise
 	bool exit = false;
 	while (exit != true) {
 		Menu();
-
-
+		
 
 		cin >> user;
 		if (user == 1) {

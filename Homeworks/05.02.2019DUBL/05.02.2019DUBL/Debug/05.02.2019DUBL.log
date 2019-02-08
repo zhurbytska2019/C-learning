@@ -1,7 +1,9 @@
 ﻿  Source.cpp
 c:\elenaprojects\homeworks\05.02.2019dubl\05.02.2019dubl\source.cpp(11): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
 c:\elenaprojects\homeworks\05.02.2019dubl\05.02.2019dubl\source.cpp(12): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
-c:\elenaprojects\homeworks\05.02.2019dubl\05.02.2019dubl\source.cpp(20): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-c:\elenaprojects\homeworks\05.02.2019dubl\05.02.2019dubl\source.cpp(34): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-c:\elenaprojects\homeworks\05.02.2019dubl\05.02.2019dubl\source.cpp(77): error C2369: arr: переопределение; различные индексы
-  c:\elenaprojects\homeworks\05.02.2019dubl\05.02.2019dubl\source.cpp(76): note:  см. объявление "arr"
+c:\elenaprojects\homeworks\05.02.2019dubl\05.02.2019dubl\source.cpp(19): error C2664: "time_t time(time_t *const )": невозможно преобразовать аргумент 1 из "int" в "time_t *const "
+  c:\elenaprojects\homeworks\05.02.2019dubl\05.02.2019dubl\source.cpp(19): note: Для преобразования из целого типа в указатель требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции
+c:\elenaprojects\homeworks\05.02.2019dubl\05.02.2019dubl\source.cpp(27): error C2664: "time_t time(time_t *const )": невозможно преобразовать аргумент 1 из "int" в "time_t *const "
+  c:\elenaprojects\homeworks\05.02.2019dubl\05.02.2019dubl\source.cpp(27): note: Для преобразования из целого типа в указатель требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции
+c:\elenaprojects\homeworks\05.02.2019dubl\05.02.2019dubl\source.cpp(50): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+c:\elenaprojects\homeworks\05.02.2019dubl\05.02.2019dubl\source.cpp(80): warning C4244: +=: преобразование "double" в "int", возможна потеря данных

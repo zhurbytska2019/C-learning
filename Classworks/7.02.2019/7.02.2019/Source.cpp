@@ -54,11 +54,11 @@
 
 using namespace std;
 
-const int ROW = 3;
-const int COL = 4;
+const int ROW = 7;
+const int COL = 5;
 
-
-void Fill(int arr[ROW][COL]) {
+template <typename T>
+void Fill(T arr[ROW][COL]) {
 	srand(unsigned(time(0)));
 	for (int i = 0; i < ROW; i++) {
 		for (int j = 0; j < COL; j++) {
@@ -69,17 +69,17 @@ void Fill(int arr[ROW][COL]) {
 
 template <typename T>
 void Print(T arr[ROW][COL]) {
-	for (T i = 0; i < ROW; i++) {
-		for (T j = 0; j < COL; j++) {
+	for (int i = 0; i < ROW; i++) {
+		for (int j = 0; j < COL; j++) {
 			cout << arr[i][j] << "	";
 		}cout << endl;
-}
+	}
 }
 
-template <typename T>
-void Change(T arr[ROW][COL]) {
-	for (T i = 0; i < ROW; i++) {
-		for (T j = 0; j < COL; j++) {	
+
+void Change(int arr[ROW][COL]) {
+	for (int i = 0; i < ROW; i++) {
+		for (int j = 0; j < COL; j++) {	
 			if (arr[i][j] % 2 == 0) {
 				arr[i][j] = 0;	
 
@@ -93,64 +93,26 @@ void Change(T arr[ROW][COL]) {
 	int main(){
 
 		int arr[ROW][COL] = {};
-		Fill(arr);
-		Print(arr);
-		cout << "=======================================" << endl;
-		Change(arr);
-		Print(arr);
+		double arr2[ROW][COL] = {};
 
+		Fill(arr);	//vyklykaiemo funkciu zapovnennia masyvu
+		Print(arr);	//vyklykaiemo funkciu vyvedennia masyvu
+		cout << "=======================================" << endl;
+
+		Change(arr);	//vyklykaiemo funkciu zaminy nulamy parnyh elementiv masyvu
+		Print(arr);		//vyklykaiemo funkciu vyvedennia masyvu
+
+		cout << "=======================================" << endl;
+
+		Fill(arr2);
+		Print(arr2);
+
+		cout << "=======================================" << endl;
+		
+		Print(arr2);
 
 		system("pause");
 		return 0;
 	}
 
 
-
-	//const int ROW1 = 3;
-	//const int COL1 = 4;
-	//const int ROW2 = 7;
-	//const int COL2 = 5;
-	//
-	//
-	//
-	//
-	//int FillArray(arr[ROW1][COL1]);
-	//
-	//template <typename T1>
-	//void PrintArray(arr[][]);
-	//
-	//
-	//void FillArray(arr[][], ROW1, COL1) {
-	//	srand(time(NULL));
-	//	for (int i = 0; i < SIZE1; i++) {
-	//		for (int j = 0; j < SIZE2; j++) {
-	//			arr[i][j] = rand() % 31 + 1;
-	//		}
-	//	}
-	//}cout << endl;
-	//
-	//template <typename T1>
-	//void PrintArray(arr[ROW1][COL1]) {
-	//	for (int i = 0; i < SIZE1; i++) {
-	//		for (int j = 0; j < SIZE2; j++) {
-	//			cout << arr[i][j] << "	";
-	//		}cout << endl;
-	//	}
-	//}
-	//
-	////////////////////////////////// main /////////////////////////////////////////////
-	//int main() {
-	//	
-	//	int arr[ROW1][COL1] = {};
-	//
-	//	
-	//	FillArray(arr, ROW1, COL1);
-	//
-	//	PrintArray(arr, ROW1, COL1);
-
-
-
-		/*
-		system("pause");
-		return 0;
-	}*/

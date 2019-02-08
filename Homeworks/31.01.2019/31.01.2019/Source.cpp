@@ -109,7 +109,7 @@
 //////////////////////////   task 2  //////////////////////////////////////
 /*Дано 2 паралельних одновимірних масиви: масив назв товарів (масив рядків)
  та масив цін товарів. Впорядкувати масиви за зростанням цін.
- Вивести назви та ціни товарів за заростанням та спаданням цін. 
+ Вивести назви та ціни товарів за зростанням та спаданням цін. 
 Використати алгоритм впорядкування методом бульбашки.*/
 
 //# include <iostream>;
@@ -118,26 +118,47 @@
 //
 //int main()
 //{
-<<<<<<< HEAD
+
+
+
+//<<<<<<< HEAD
+
+
 //	//char arrGoods[5][10] = { "Milk", "Bread", "Apples", "Meat", "Tomatoes"};
 //	int arrGoods[5] = { 0,1,2,3,4 };
 //	int arrPrices[5] = { 25, 15, 28, 135, 75 };
 //	int const MIL = 0, BREAD = 1, APPL = 2, MEAT = 3, TOM = 4;
 //
 //	cout << arrGoods[MIL] << " " << arrPrices[MIL]<<endl;
-=======
+
+
+
+//=======
+
+
+
 //	char arrGoods[5] = { Milk, Bread, Apples, Meat, Tomatoes};
 //	int arrPrices[5] = { 25, 15, 28, 135, 75 };
 //	int const MIL = 0, BREAD = 1, APPL = 2, MEAT = 3, TOM = 4;
 //
 //	cout << arrGoods[MIL] << " " << arrPrices[MIL];
->>>>>>> be9ade4980e6f895ae3f5dfeffb3006029a06fbe
+
+
+
+//>>>>>>> be9ade4980e6f895ae3f5dfeffb3006029a06fbe
+
+
+
 //
 //
 //
 //	system("pause");
 //	return 0;
-<<<<<<< HEAD
+
+
+//<<<<<<< HEAD
+
+
 //}
 =======
 //}
@@ -240,4 +261,5 @@ int main() {
 	system("pause");
 	return 0;
 }
->>>>>>> be9ade4980e6f895ae3f5dfeffb3006029a06fbe
+
+//>>>>>>> be9ade4980e6f895ae3f5dfeffb3006029a06fbe
