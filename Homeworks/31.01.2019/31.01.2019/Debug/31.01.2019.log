@@ -1,7 +1,4 @@
 ﻿  Source.cpp
-c:\elenaprojects\homeworks\31.01.2019\31.01.2019\source.cpp(163): error C2059: синтаксическая ошибка: ==
-c:\elenaprojects\homeworks\31.01.2019\31.01.2019\source.cpp(167): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
-c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\sal.h(2361): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
-c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\sal.h(2361): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
-c:\elenaprojects\homeworks\31.01.2019\31.01.2019\source.cpp(168): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
-c:\elenaprojects\homeworks\31.01.2019\31.01.2019\source.cpp(232): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+c:\elenaprojects\homeworks\31.01.2019\31.01.2019\source.cpp(114): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+c:\elenaprojects\homeworks\31.01.2019\31.01.2019\source.cpp(115): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  31.01.2019.vcxproj -> C:\ElenaProjects\Homeworks\31.01.2019\Debug\31.01.2019.exe

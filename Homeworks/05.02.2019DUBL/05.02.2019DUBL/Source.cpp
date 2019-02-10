@@ -12,7 +12,6 @@
 #include <ctime>;
 using namespace std;
 
-int sum = 0;//suma elementiv masyvu
 int res = 0;//rezultat obchyslennia
 
 void FillArray(int arr[], const int SIZE1) {
