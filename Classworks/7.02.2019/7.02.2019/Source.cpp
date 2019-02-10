@@ -58,11 +58,12 @@ const int ROW = 7;
 const int COL = 5;
 
 template <typename T>
-void Fill(T arr[ROW][COL]) {
+void Fill(T arr[ROW][COL]) {	
 	srand(unsigned(time(0)));
 	for (int i = 0; i < ROW; i++) {
 		for (int j = 0; j < COL; j++) {
 			arr[i][j] = rand() % 31 + 1;
+			
 		}
 	}
 }
@@ -99,7 +100,7 @@ void Change(int arr[ROW][COL]) {
 		Print(arr);	//vyklykaiemo funkciu vyvedennia masyvu
 		cout << "=======================================" << endl;
 
-		Change(arr);	//vyklykaiemo funkciu zaminy nulamy parnyh elementiv masyvu
+		Change(arr);	//vyklykaiemo funkciu zaminy nuliamy parnyh elementiv masyvu
 		Print(arr);		//vyklykaiemo funkciu vyvedennia masyvu
 
 		cout << "=======================================" << endl;
@@ -113,6 +114,4 @@ void Change(int arr[ROW][COL]) {
 
 		system("pause");
 		return 0;
-	}
-
-
+	}	   	  
