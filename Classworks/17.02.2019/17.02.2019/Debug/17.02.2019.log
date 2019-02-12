@@ -1,0 +1,5 @@
+﻿  Source.cpp
+c:\users\zhurbytska\desktop\projectselena\classworks\17.02.2019\17.02.2019\source.cpp(118): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\zhurbytska\desktop\projectselena\classworks\17.02.2019\17.02.2019\source.cpp(119): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+Source.obj : error LNK2019: unresolved external symbol "void __cdecl FillKeyboard(void)" (?FillKeyboard@@YAXXZ) referenced in function "void __cdecl Menu(void)" (?Menu@@YAXXZ)
+C:\Users\Zhurbytska\Desktop\ProjectsElena\Classworks\17.02.2019\Debug\17.02.2019.exe : fatal error LNK1120: 1 unresolved externals
