@@ -156,7 +156,7 @@ int main() {
 	int NewVasia[JUDGES] = {};
 	for (int i = 0; i < JUDGES - maxV - minV; i++) {
 		if (i != maxV && i != minV) {
-		cout << NewVasia[i];
+		NewVasia[i]=
 		}
 		
 	}
