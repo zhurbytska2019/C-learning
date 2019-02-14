@@ -202,39 +202,6 @@ int main() {
 }
 ////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////// FUNCTIONS /////////////////////////////////////////////////
-//template <typename T>
-//void Menu(T arr) {
-//	cout << "///////////////////////// MENU /////////////////////////////" << endl;
-//	cout << "Choose how to fill the array: from keyboard [1], by random numbers [2]" << endl;
-//	int HowFill = 0;	//ask user how he wants to fill array
-//
-//	cin >> HowFill;		//user choice how to fill the array
-//
-//	if (HowFill == 1) {
-//		FillKeyboard(HowFill, arr);	//filling by the keyboard
-//		PrintArray(arr);
-//		cout << "===========================================================" << endl;
-//	}
-//	else if (HowFill == 2) {
-//		void FillArray();			//filling by the random elements
-//		PrintArray(arr);
-//		cout << "===========================================================" << endl;
-//	}
-//
-//	cout << "Choose how to sort the array: to the up [1], to the down [2]" << endl;
-//	int HowSort = 0;
-//	cin >> HowSort;
-//	if (HowSort == 1) {
-//		SortUp(arr);				//Sorting to the up
-//		PrintArray(arr);
-//		cout << "===========================================================" << endl;
-//	}
-//	else if (HowSort == 2) {
-//		SortDown(arr);				//Sorting to the down
-//		PrintArray(arr);
-//		cout << "===========================================================" << endl;
-//	}
-//}
 
 ////keyboard
 template < typename T >
@@ -247,7 +214,7 @@ void FillKeyboard(int HowFill, T arr[SIZE]) {	//function for the filling array f
 	}
 }
 
-//random
+/////random
 template <typename T>
 void FillArray(T arr[SIZE]) {
 	for (int i = 0; i < SIZE; i++) {
@@ -255,7 +222,7 @@ void FillArray(T arr[SIZE]) {
 	}
 }
 
-//print
+/////print
 template <typename T1>
 void PrintArray(T1 arr[SIZE]) {
 	
@@ -264,7 +231,7 @@ void PrintArray(T1 arr[SIZE]) {
 	}cout << endl;
 }
 
-//Sorting array to the up
+/////Sorting array to the up
 template <typename T>
 void SortUp(T arr[SIZE]) {
 	cout << "=========== Sorting to the up ============" << endl;
@@ -284,7 +251,7 @@ void SortUp(T arr[SIZE]) {
 }
 
 
-//Sorting array to the down
+/////Sorting array to the down
 template <typename T>
 void SortDown(T arr[SIZE]) {
 	cout << "=========== Sorting to the down ============" << endl;
