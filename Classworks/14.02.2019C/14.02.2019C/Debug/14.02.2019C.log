@@ -1,0 +1,5 @@
+﻿  Source.cpp
+c:\elenaprojects\classworks\14.02.2019c\14.02.2019c\source.cpp(159): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+c:\elenaprojects\classworks\14.02.2019c\14.02.2019c\source.cpp(175): warning C4305: инициализация: усечение из "__int64" в "int"
+c:\elenaprojects\classworks\14.02.2019c\14.02.2019c\source.cpp(175): warning C4309: инициализация: усечение константного значения
+  14.02.2019C.vcxproj -> C:\ElenaProjects\Classworks\14.02.2019C\Debug\14.02.2019C.exe

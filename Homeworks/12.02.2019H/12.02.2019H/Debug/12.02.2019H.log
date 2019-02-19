@@ -1,4 +1,6 @@
 ﻿  Source.cpp
 c:\elenaprojects\homeworks\12.02.2019h\12.02.2019h\source.cpp(5): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
-c:\elenaprojects\homeworks\12.02.2019h\12.02.2019h\source.cpp(42): warning C4715: BinaryConvers: значение возвращается не при всех путях выполнения
-  12.02.2019H.vcxproj -> C:\ElenaProjects\Homeworks\12.02.2019H\Debug\12.02.2019H.exe
+c:\elenaprojects\homeworks\12.02.2019h\12.02.2019h\source.cpp(27): error C2296: %: недопустимо, левый операнд имеет тип "float"
+c:\elenaprojects\homeworks\12.02.2019h\12.02.2019h\source.cpp(30): error C2296: %: недопустимо, левый операнд имеет тип "float"
+c:\elenaprojects\homeworks\12.02.2019h\12.02.2019h\source.cpp(33): error C2296: %: недопустимо, левый операнд имеет тип "float"
+c:\elenaprojects\homeworks\12.02.2019h\12.02.2019h\source.cpp(39): error C2296: %: недопустимо, левый операнд имеет тип "float"
