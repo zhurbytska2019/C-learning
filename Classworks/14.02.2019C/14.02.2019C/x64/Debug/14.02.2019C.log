@@ -1,4 +1,4 @@
 ﻿  Source.cpp
-c:\elenaprojects\classworks\14.02.2019c\14.02.2019c\source.cpp(159): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
-c:\elenaprojects\classworks\14.02.2019c\14.02.2019c\source.cpp(413): warning C4715: Balance: значение возвращается не при всех путях выполнения
+c:\elenaprojects\classworks\14.02.2019c\14.02.2019c\source.cpp(10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+c:\elenaprojects\classworks\14.02.2019c\14.02.2019c\source.cpp(11): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
   14.02.2019C.vcxproj -> C:\ElenaProjects\Classworks\14.02.2019C\x64\Debug\14.02.2019C.exe
