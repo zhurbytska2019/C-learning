@@ -1,5 +1,5 @@
-///////// HOMEWORK /////////
-///////// task 1 ///////////
+///////// HOMEWORK 28.02.2019/////////
+///////// task 1 /////////////////////
 /*Створити 3 динамічних змінних різного типу. Заповнити їх деякими значеннями. 
 Обчислити і вивести на екран їх добуток, а також самі значення динамічних змінних.
 
@@ -7,9 +7,7 @@ Stvoryty try dynamichnyh zminnyh riznogo typu. Zapovnyty ih dejakymy znachenniam
 Obchyslyty i vyvesty na ekran ih dobutok, a takog sami znachennia dynamichnyh zminnyh
 */
 
-
 #include <iostream>
-//#include <ctime>
 using namespace std;
 
 
@@ -34,6 +32,14 @@ int main()
 
 	cout << "Multiplication a * b * c = " << (*pa)<<" * "<<(*pb)<<" * "<<(*pc)<<" = " << (*pa) * (*pb) * (*pc) << endl<<endl;
 	
+	pa = NULL;
+	delete pa;
+
+	pb = NULL;
+	delete pb;
+
+	pc = NULL;
+	delete pc;
 
 	system("pause");
 	return 0;
