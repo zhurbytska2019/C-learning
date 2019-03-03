@@ -15,12 +15,17 @@
 //	cout << "Pointer a" << *pA << "\tAdress pointer a	" << pA << endl;
 //	/*Зараз на одну і ту саму адресу ссилаються і вказівник і змінна*/
 //	//Test (int a) - значення змінної а буде те саме, але під час передачі змінної а в функцію, в неї змінюється адреса
+
 //	//якщо ж ми в функцію передаємо вказівник на змінну, то адреса буде та сама!!!
-//	//ФЛЬТЕРНАТИВА ВКАЗІВНИКУ
+/////jakscho my v funkciju peredaemo vkazivnyk na zminnu, to adresa bude ta sama!!!
+
+//	//AЛЬТЕРНАТИВА ВКАЗІВНИКУ
+////ALTERNATYVA VKAZIVNYKU
 //									int &RA = a;
 //	//REFERENCE
 //									cout << "Reference " << RA <<"	Adress reference	"<< &RA << endl;
 ////Та сама адреса, бо ми посилаємось на ту саму змінну
+////Ta sama adresa, bo my posylaemos na tu samu zminnu
 //
 //	system("pause");
 //	return 0;
@@ -79,7 +84,11 @@
 
 /*		Дано три числа.Оголосити посилання на ці числа. Отримати добуток
 		трьох заданих чисел, середє арифметичне, найменше з них, користуючись
-		непрямим доступом до чисел(через посилання).*/
+		непрямим доступом до чисел(через посилання).
+		
+		Dano try chysla. Ogolosyty posylannia na ci chysla. Otrymaty dobutok trioh zadanyh chysel, seredne aryfmetychne, 
+		najmenshe z nyh, korystujuchyc nepriamym dostupom do chysel (Cherez posylannia).
+		*/
 		//#include <iostream>
 		//#include <ctime>
 		//using namespace std;
@@ -130,12 +139,16 @@
 
 /*Написати функцію, яка отримує одновимірний масив і повертає ссилку на
 найменший елемент масиву.За допомогою цієї функції вивести на екран найменший
-елемент та подвоїти найменший елемент масиву.*/
+елемент та подвоїти найменший елемент масиву.
+
+Napysaty funkciu, jaka otrymye odnovymirnyi masyv i povertae ssylky na naymenshyi element masyvu.
+Za dopomogou ciei funkcii vyvesty na ekran najmenshyi element i podvoity jogo.
+*/
 
 //////#include <iostream>
 //////#include <ctime>
 //////using namespace std;
-
+//////
 //////void Fill(int arr[], int SIZE);
 //////void Print(int arr[], int SIZE);
 //////void MinArr(int arr[], int SIZE, int &Rmin);
@@ -191,70 +204,73 @@
 //////}
 
 /*Написати функцію, яка замінює всі від’ємні елементи переданого масиву 
-нулями. Примітка! Функція повинна повертати ссилку на відємний елемент*/
+нулями. Примітка! Функція повинна повертати ссилку на відємний елемент
 
-#include <iostream>
-#include <ctime>
-using namespace std;
+Napysaty funkciu, iaka zaminue vsi videmni elementy peredanogo masyvu
+nulamy. Funkcia povynna povertaty ccylku na videmnyi element.*/
 
-
-void Fill(int arr[], int SIZE, int &Ra);
-void Print(int arr[], int SIZE);
-void Zero(int arr[], int SIZE, int &Ri);
-
-
-int main()
-{
-	srand(unsigned(time(NULL)));
-	const int SIZE = 5;
-	int arr[SIZE] = {};
-	int a = 0;
-	int &Ra = a;	
-	int i = 0;
-	int &Ri = i;
-	
-	Fill(arr, SIZE, Ra);
-	cout << "Array before changes" << endl;
-	Print(arr, SIZE);
-	Zero(arr, SIZE, i);
-
-	cout << "Array after changes/ All negative elements were changed by zeroes" << endl;
-	Print(arr, SIZE);
-	
-	system("pause");
-	return 0;
-}
-
-void Fill(int arr[], int SIZE, int &Ra)
-{
-	cout << "Enter number from - 10 to 10;" << endl;
-	for (int i = 0; i < SIZE; i++)
-	{
-		cin >> Ra;
-		arr[i] = Ra;
-	}
-}
-
-void Print(int arr[], int SIZE)
-{
-	for (int i = 0; i < SIZE; i++)
-	{
-		cout << arr[i] << "	";
-	}
-	cout << endl;
-
-}
-
-void Zero(int arr[], int SIZE, int &Ri)
-{
-	for (int Ri = 0; Ri < SIZE; Ri++)
-
-	{
-		if (arr[Ri] < 0)
-		{			
-			cout << "Negative element " << Ri << " = " << arr[Ri] << endl;
-			arr[Ri] = 0;
-		}
-	}
-}
+//////#include <iostream>
+//////#include <ctime>
+//////using namespace std;
+//////
+//////
+//////void Fill(int arr[], int SIZE, int &Ra);
+//////void Print(int arr[], int SIZE);
+//////void Zero(int arr[], int SIZE, int &Ri);
+//////
+//////
+//////int main()
+//////{
+//////	srand(unsigned(time(NULL)));
+//////	const int SIZE = 5;
+//////	int arr[SIZE] = {};
+//////	int a = 0;
+//////	int &Ra = a;	
+//////	int i = 0;
+//////	int &Ri = i;
+//////	
+//////	Fill(arr, SIZE, Ra);
+//////	cout << "Array before changes" << endl;
+//////	Print(arr, SIZE);
+//////	Zero(arr, SIZE, i);
+//////
+//////	cout << "Array after changes/ All negative elements were changed by zeroes" << endl;
+//////	Print(arr, SIZE);
+//////	
+//////	system("pause");
+//////	return 0;
+//////}
+//////
+//////void Fill(int arr[], int SIZE, int &Ra)
+//////{
+//////	cout << "Enter number from - 10 to 10;" << endl;
+//////	for (int i = 0; i < SIZE; i++)
+//////	{
+//////		cin >> Ra;
+//////		arr[i] = Ra;
+//////	}
+//////}
+//////
+//////void Print(int arr[], int SIZE)
+//////{
+//////	for (int i = 0; i < SIZE; i++)
+//////	{
+//////		cout << arr[i] << "	";
+//////	}
+//////	cout << endl;
+//////
+//////}
+//////
+//////void Zero(int arr[], int SIZE, int &Ri)
+//////{
+//////	for (int Ri = 0; Ri < SIZE; Ri++)
+//////
+//////	{
+//////		if (arr[Ri] < 0)
+//////		{			
+//////			cout << "Negative element " << Ri << " = " << arr[Ri] << endl;
+//////			arr[Ri] = 0;
+//////		}
+//////	}
+//////}
 
