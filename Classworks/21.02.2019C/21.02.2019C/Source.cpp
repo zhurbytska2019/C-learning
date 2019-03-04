@@ -309,107 +309,6 @@ OF THE ARRAY*/
 	Елементи масиву В, які не зустрічаються у А;
 	Елементи масивів A і B, які не є спільними для них (тобто об’єднання результатів двох попередні результатів). 
 	
-	
-	*/
-
-	//#include <iostream>
-	//#include <ctime>
-	//using namespace std;
-	//void Fill(int pArr[], const int SIZE);
-	//void Print(int pArr[], const int SIZE);
-	////void Create(int arrA[], int arrB[], int arrC[], const int N, const int M, const int C);
-	////void Common(int arrA[], int arrB[], const int N, const int M);
-	//
-	//int main()
-	//{
-	//	srand(unsigned(time(NULL)));
-	//
-	//	const int N = 10;
-	//	const int M = 5;
-	//	const int C = N + M;
-	//
-	//	int arrA[N] = {};
-	//	int arrB[M] = {};
-	//	int arrC[C] = {};
-	//
-	//	int *pArrA = arrA;
-	//	int *pArrB = arrB;
-	//	int *pArrC = arrC;
-	//
-	//
-	//	Fill(pArrA, N);
-	//	Fill(pArrB, M);
-	//	cout << "==================== ARRAY A ======================" << endl;
-	//	Print(arrA, N);
-	//	cout << "==================== ARRAY B ======================" << endl;
-	//	Print(arrB, M);
-	//	cout << "==================== ARRAY C (ARRAY A + ARRAY B)======================" << endl;
-	//	/*Create(arrA, arrB, arrC, N, M, C);*/
-	//	/*Print(arrC, C);*/
-	//	/*Common(arrA, arrB, N, M);*/
-	//
-	//	system("pause");
-	//	return 0;
-	//}
-	//void Fill(int pArr[], const int SIZE)
-	//{
-	//	for (int i = 0; i < SIZE; i++)
-	//	{
-	//		pArr[i] = rand() % 10 + 1;
-	//	}
-	//}
-	//
-	//void Print(int pArr[], const int SIZE)
-	//{
-	//	for (int i = 0; i < SIZE; i++)
-	//	{
-	//		cout << *(pArr +i) << "	";
-	//	}cout << endl;
-	//}
-
-	//
-	//void Create (int arrA[], int arrB[], int arrC[], const int N, const int M, const int C)
-	//{
-	//	int tmp = 0;
-	//	for (int i = 0; i < C; i++)
-	//	{
-	//		if (i < N)
-	//		{
-	//			arrC[i] = arrA[i];
-	//		}
-	//		else
-	//		{
-	//			arrC[i] = arrB[tmp];
-	//			tmp++;
-	//		}
-	//
-	//	}
-	//}
-
-	//void Common(int arrA[], int arrB[], const int N, const int M)
-	//{
-	//for (int i =0; i<N; i++)
-	//{
-	//	if(arrA[i]=arrB[i])
-	//	{
-	//		int temp = 0;
-	//
-	//		cout << "Common element of the arrays is:  " << arrA[i] << endl;
-	//	}
-	//}
-	//}
-
-
-
-	//////////////////////////////////////// TASK 4 ///////////////////////////////////////
-	/*
-	Дано два масива: А[n] и B[m]. Утворити третій масив мінімального можливого розміру, у якому зібрати:
-	Елементи обох масивів;
-	Спільні элементи обох массивов;
-	Елементи масиву A, які не зустрічаються у B;
-	Елементи масиву В, які не зустрічаються у А;
-	Елементи масивів A і B, які не є спільними для них (тобто об’єднання результатів двох попередні результатів). 
-	
 	Dano dva masyva: A[n] i B[m]. Utvoryty tretij masyv minimalno moglyvogo rozmiru, u jakomy zibraty:
 	Elementy oboh masyviv;
 	Spilni elementy oboh masyviv;
@@ -471,6 +370,11 @@ int main()
 
 	cout << "\nElements of the array arr1, which not appears at arr2" << endl;
 	NotAppear(pArr1, pArr2, SIZE1, SIZE2);
+
+	cout << "\nElements of the array arr2, which not appears at arr1" << endl;
+	NotAppearB(pArr1, pArr2, SIZE1, SIZE2);
+
+
 
 	system("pause");
 	return 0;
@@ -560,21 +464,21 @@ void NotAppear(int pArrA[], int pArrB[], const int SIZE1, const int SIZE2)
 void NotAppearB(int pArrA[], int pArrB[], const int SIZE1, const int SIZE2)
 {
 	int k = 0;	//counter, jakyj rahue skilky raziv element masyvu A ne dorivnue elementu masuva B
-	for (int i = 0; i < SIZE1; i++)
+	for (int i = 0; i < SIZE2; i++)
 	{
 
-		for (int j = 0; j < SIZE2; j++)
+		for (int j = 0; j < SIZE1; j++)
 		{
 
-			if (*(pArrA + i) != *(pArrB + j))
+			if (*(pArrB + i) != *(pArrA + j))
 			{
 				k++;
 			}
 
 		}
-		if (k == SIZE2)
+		if (k == SIZE1)
 		{
-			cout << "Not common element" << "[ " << i << " ] = " << *(pArrA + i) << endl;
+			cout << "Not common element" << "[ " << i << " ] = " << *(pArrB + i) << endl;
 		}
 
 		k = 0;
