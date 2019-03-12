@@ -40,25 +40,25 @@ void Push(int *&arr, int size)  //funkcija dodavannia elementu v kinec masyvu
 
 int main()
 {
+			
+		srand(unsigned(time(NULL)));
+		int size = 0;
+		cout << "Enter arr size" << endl;
+		cin >> size;
+		cout << "===========================>" << endl;
+		int *arr = new int[size];
 
+		cout << "arr addres" << arr << endl;
+		Fill(arr, size);
+		Print(arr, size);
 
-	srand(unsigned(time(NULL)));
-	int size = 0;
-	cout << "Enter arr size" << endl;
-	cin >> size;
-	cout << "===========================>" << endl;
-	int *arr = new int[size];
-
-	cout << "arr addres" << arr << endl;
-	Fill(arr, size);
-	Print(arr, size);
-
-	Push(arr, size);	//funkcija dodavannia elementu v kinec masyvu
-	Print(arr, size + 1); //funkcija vyvedennia novogo masyvu
-
-
-
-	delete[] arr;
+		Push(arr, size);	//funkcija dodavannia elementu v kinec masyvu
+		Print(arr, size + 1); //funkcija vyvedennia novogo masyvu
+			   
+		delete[] arr;
+		
+	
+	
 	system("pause");
 	return 0;
 }

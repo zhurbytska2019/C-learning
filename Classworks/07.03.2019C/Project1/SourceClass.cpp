@@ -222,18 +222,22 @@ void Print(int *const arr, const int size)
 
 void Add_Blok_El(int *&arr, int size)
 {
-	cout << "Enter how many elements you whill enter" << endl;
-	int howMany = 0;
-	cin >> howMany;
-	int *BlokArr = new int[howMany];
-	for (int i = 0; i < howMany; i++)
-	{
-		cout << "Enter [" << i << "] element" << endl;
-		
-		cin >> BlokArr[i];
-		cout << "Test" << BlokArr[i] << endl;
+	cout << "How many elements you will enter" << endl;
+	int number = 0;
+	cin >> number;
+	int *BlokArr = new int[number];
 
+	cout << "Enter element" << endl;
+
+	for (int i = 0; i < number; i++)
+	{		
+		cin >> BlokArr[i];				
 	}
+
+
+
+
+
 }
 
 
