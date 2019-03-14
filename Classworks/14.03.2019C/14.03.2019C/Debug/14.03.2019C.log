@@ -1,0 +1,4 @@
+﻿  Source.cpp
+c:\users\zhurbytska\desktop\githubrepo\classworks\14.03.2019c\14.03.2019c\source.cpp(182): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\zhurbytska\desktop\githubrepo\classworks\14.03.2019c\14.03.2019c\source.cpp(188): error C2374: 'a': redefinition; multiple initialization
+  c:\users\zhurbytska\desktop\githubrepo\classworks\14.03.2019c\14.03.2019c\source.cpp(181): note: see declaration of 'a'
