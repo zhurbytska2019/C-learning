@@ -238,54 +238,156 @@ Stvoryty structuru, jaka opysuje tvarynu (nazva, clas, klychka).
 Stvotyty funkcii dlia roboty z cieu structurou (zapovnennia objekta,
 vyvid na ekran danyh pro objekt, funkcija "podaty golos")
 */
+//
+//# include <iostream>
+//# include <ctime>
+//# include <string>
+//using namespace std;
+//
+//struct animal //stvoryly strukturu "animal"
+//{
+//	string clas;	// stvoryly zminnu typy "string" z nazvou "clas"
+//	string vyd;
+//	string name;
+//
+//	void ShowAnimalInfo()	//stvoryly funkciu dla vyvodu na ekran zminnyh (vlastyvostey abo poliv)
+//	{
+//		cout << "	Class: " << clas << "\n	Vyd of animal: " << vyd << "\n	Name: " << name << endl;
+//	}
+//
+//	void SetClas(string newClas)	//stvoryly funkciu dla zapovnennia vlastyvostey
+//	{
+//		clas = newClas;
+//	}
+//
+//	void SetVyd(string newVyd) {		//stvoryly funkciu dla zapovnennia vlastyvostey
+//		vyd = newVyd;
+//	}
+//
+//	void SetName(string newName) {		//stvoryly funkciu dla zapovnennia vlastyvostey
+//		name = newName;
+//	}
+//
+//	void GetVoice() {						//stvoryly funkciu dla vyvody komandy "golos"
+//		cout << "Dolly get voice" << endl;
+//	}
+//
+//};
+//
+//int main()
+//{
+//	animal Dolly;
+//
+//	Dolly.SetClas("mammal");
+//	Dolly.SetVyd("Zebra");
+//	Dolly.SetName("Dolly");
+//	Dolly.ShowAnimalInfo();
+//	Dolly.GetVoice();
+//	/*cout << Bill.GetAge() << endl;*/
+//	cout << "============================" << endl;
+//
+//
+//	system("pause");
+//	return 0;
+//}
+
+
+///////////  HOMEWORK  ///////////
+/*Написати програму, яка реалізує телефонну книгу з вказаною користувачем кількістю 
+абонентів і всіма необхідними функціями. Використати вкладені структури (для адреси чи ПІБ). 
+
+Napysaty programu, jaka realizuje telefonnu knygu z vkazanoju korystuvachem kilkistu
+abonentiv i vsima neobhidnymy funkcijamy. Vykorystaty vkladeni struktury (dla adresy chy PIB)
+*/
 
 # include <iostream>
 # include <ctime>
 # include <string>
 using namespace std;
 
-struct animal //stvoryly strukturu "animal"
+struct address
 {
-	string clas;	// stvoryly zminnu typy "string" z nazvou "clas"
-	string vyd;
+	string country;
+	string region;
+	string town;
+	string street;
+	
+	void ShowAdrressInfo()
+	{
+		cout << "	Country: " << country << "\n	Region: " << region << "\n	Town: " << town << "\n	street: " << street <<endl;
+		
+	}
+};
+
+struct Person
+{
+private:
+	
+	int foneNumber;
 	string name;
+	string sername;
+	
+public:
 
-	void ShowAnimalInfo()	//stvoryly funkciu dla vyvodu na ekran zminnyh (vlastyvostey abo poliv)
+
+	void ShowPersonInfo()
 	{
-		cout << "	Class: " << clas << "\n	Vyd of animal: " << vyd << "\n	Name: " << name << endl;
+		cout << "	Fone Number is: "<<"\n	name = " << name << "\n	sername = " << sername << endl;
 	}
 
-	void SetClas(string newClas)	//stvoryly funkciu dla zapovnennia vlastyvostey
-	{
-		clas = newClas;
+	void SetNumber(int newNumber)
+	{		
+			foneNumber = newNumber;
+				
 	}
 
-	void SetVyd(string newVyd) {		//stvoryly funkciu dla zapovnennia vlastyvostey
-		vyd = newVyd;
+	int GetAge() {
+		return foneNumber;
 	}
 
-	void SetName(string newName) {		//stvoryly funkciu dla zapovnennia vlastyvostey
+	void SetName(string newName) {
 		name = newName;
 	}
+	void SetSername(string newSername) {
+		sername = newSername;
+	}	
 
-	void GetVoice() {						//stvoryly funkciu dla vyvody komandy "golos"
-		cout << "Dolly get voice" << endl;
-	}
-
+	address address;
 };
 
 int main()
 {
-	animal Dolly;
-
-	Dolly.SetClas("mammal");
-	Dolly.SetVyd("Zebra");
-	Dolly.SetName("Dolly");
-	Dolly.ShowAnimalInfo();
-	Dolly.GetVoice();
-	/*cout << Bill.GetAge() << endl;*/
-	cout << "============================" << endl;
-
+		Person Bill;	
+			
+		Bill.SetName("Bill");
+		Bill.SetSername("Gates");
+	
+		Bill.SetNumber(80685683681);
+		Bill.ShowPersonInfo();
+		Bill.address.country = "USA";
+		Bill.address.region = "CA";
+		Bill.address.town = "LA";
+		Bill.address.street = "s. Bandery";		
+		Bill.address.ShowAdrressInfo();
+			
+		cout << "============================" << endl;
+	
+	
+		Person Stive;
+		
+		Stive.SetName("Stive");
+		Stive.SetSername("Balmor");
+	
+		Stive.SetNumber(80685683695);
+		Stive.ShowPersonInfo();
+		Stive.address.country = "USA";
+		Stive.address.region = "CA";
+		Stive.address.town = "SF";
+		Stive.address.street = "Shuhevycha";
+		
+		Stive.address.ShowAdrressInfo();
+		
+		cout << "============================" << endl;
 
 	system("pause");
 	return 0;

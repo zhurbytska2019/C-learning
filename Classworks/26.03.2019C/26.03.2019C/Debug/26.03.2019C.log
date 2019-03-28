@@ -1,0 +1,6 @@
+﻿  Source.cpp
+c:\elenaprojects\classworks\26.03.2019c\26.03.2019c\source.cpp(365): warning C4305: аргумент: усечение из "__int64" в "int"
+c:\elenaprojects\classworks\26.03.2019c\26.03.2019c\source.cpp(365): warning C4309: аргумент: усечение константного значения
+c:\elenaprojects\classworks\26.03.2019c\26.03.2019c\source.cpp(381): warning C4305: аргумент: усечение из "__int64" в "int"
+c:\elenaprojects\classworks\26.03.2019c\26.03.2019c\source.cpp(381): warning C4309: аргумент: усечение константного значения
+  26.03.2019C.vcxproj -> C:\ElenaProjects\Classworks\26.03.2019C\Debug\26.03.2019C.exe
